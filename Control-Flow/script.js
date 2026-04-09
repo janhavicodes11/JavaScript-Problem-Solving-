@@ -1,4 +1,4 @@
-Write a function getGrade(score) that:
+ Question 1: Write a function getGrade(score) that:
 • Takes a student’s marks (0 to 100)
  • Returns the grade based on this logic:
  90–100 A+
@@ -43,16 +43,51 @@ function getGrade(score){
 function getGrade(score){
     if (score >= 90 && score <= 100) return "A++"
     
- if (score >= 80 && score <= 89) return "A"
+    if (score >= 80 && score <= 89) return "A"
     
-     if (score >= 70 && score <= 79) return "B"
+    if (score >= 70 && score <= 79) return "B"
     
-     if (score >= 60 && score <= 69)   return "C"
+    if (score >= 60 && score <= 69)   return "C"
     
     if (score >= 33 && score <= 59) return "D"
+    if (score >= 0 && score <= 32) return "Fail"
+   return "Invalid marks"
+ }
+   console.log(getGrade(89))
+
+
+ 
     
-     if (score >= 0 && score <= 32) return "Fail"
-    
-      return "Invalid marks"
+     
+Question 2: Rock- paper scisoors logic :
+function rps(human , computer){
+ if(human === "rock" && computer === "scissors"){
+ console.log("human is winner")
+ }
+
+ else if (human === "paper" && computer === "scissors"){
+ console.log("computer is winner")
+ }
+
+ else if( human=== "rock" && computer==="scissors"){
+ console.log("human is the winner")
+ }
+
+ else{
+ console.log("draw")
+ }
 }
-console.log(getGrade(10000))
+console.log(rps("paper" , "scissors"))
+
+// using early return value :
+function rps( human , computer){
+    if(human ==="rock " && computer === "scissor") return "human is winner"
+    if(human === "paper" && computer === "scissors") return "computer is winner"
+    if(human=== "rock" && computer==="scissors") return "human is winner"
+ 
+    //if(human=== "rock" && computer==="rock") return "draw"
+    if(human === computer) return "draw"
+}
+console.log(rps("rock" , "rock"))
+
+
