@@ -16,4 +16,24 @@ function Sign(isAdmin , isLoggedIn){
 }
 console.log(Sign(isAdmin , isLoggedIn))
 
+
+
+
+
+
+
 // Using early return pattern 
+
+let isAdmin = false;
+let isLoggedIn = true
+
+function Sign(isAdmin , isLoggedin){
+    if( isAdmin && isLoggedin)
+        console.log("Welcome to the main dashboard")
+    if(!isAdmin && isLoggedin)
+        console.log("Kindly log in as admin")
+    if(!isAdmin && !isLoggedin)
+        console.log("Sign in please")
+
+}
+console.log(Sign(isAdmin , isLoggedIn))
