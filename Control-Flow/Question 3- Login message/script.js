@@ -22,6 +22,7 @@ console.log(Sign(isAdmin , isLoggedIn))
 
 
 
+
 // Using early return pattern 
 
 let isAdmin = false;
