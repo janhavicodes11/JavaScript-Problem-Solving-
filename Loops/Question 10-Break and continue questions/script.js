@@ -1,0 +1,7 @@
+for(let i=1;i<101;i++){
+     console.log(i)
+    if(i%7===0){
+        break;
+    }
+   
+}
