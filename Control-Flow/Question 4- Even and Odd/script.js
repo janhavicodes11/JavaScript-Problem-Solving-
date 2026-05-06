@@ -11,3 +11,4 @@ function EvenOdd(num1 , num2){
     }
 }
 console.log (EvenOdd(num1 , num2))
+console
